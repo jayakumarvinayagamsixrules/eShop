@@ -3,12 +3,34 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{CE842BFA-F8F2-473A-9DB6-C33161B739F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{F39115B8-4B81-4877-954C-4F796E422583}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{00F671C5-4FA5-47AC-8345-647F0C784A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks.csproj", "{BF2A53B6-B410-470D-ADD0-0F503A547B19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00F671C5-4FA5-47AC-8345-647F0C784A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F671C5-4FA5-47AC-8345-647F0C784A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F671C5-4FA5-47AC-8345-647F0C784A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F671C5-4FA5-47AC-8345-647F0C784A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2A53B6-B410-470D-ADD0-0F503A547B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2A53B6-B410-470D-ADD0-0F503A547B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2A53B6-B410-470D-ADD0-0F503A547B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2A53B6-B410-470D-ADD0-0F503A547B19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F39115B8-4B81-4877-954C-4F796E422583} = {CE842BFA-F8F2-473A-9DB6-C33161B739F8}
+		{00F671C5-4FA5-47AC-8345-647F0C784A60} = {F39115B8-4B81-4877-954C-4F796E422583}
 	EndGlobalSection
 EndGlobal
